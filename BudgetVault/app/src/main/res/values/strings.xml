@@ -1,0 +1,193 @@
+<resources>
+    <string name="feedback_button">Feedback</string>
+    <string name="app_name">Budget Vault</string>
+    <string name="sign_in"><u>Sign in</u></string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="privacy_checkbox">I have <b>read</b>, <b>understood</b>, and <b>agree</b> to the <b>Terms and Conditions</b>. I acknowledge that by creating an account, I accept all policies, including privacy and data usage terms.</string>
+    <string name="home_button">Home Button </string>
+    <string name="ai_button"> Personal Assistant</string>
+    <string name="report_button"> Reports</string>
+    <string name="settings_button"> Settings</string>
+    <string name="budgeting_advice">Budgeting Advice</string>
+    <string name="back_button_description">Back button</string>
+    <string name="top_message">Check Available Resources to learn more about budgeting your finances efficiently.</string>
+    <string name="videos_title">Check out available videos:</string>
+    <string name="view_all_videos">View all</string>
+    <string name="video1_title">Budgeting Basics</string>
+    <string name="video1_description">This explainer video will teach you the basics of budgeting. It explains why budgeting is important and how to do it.</string>
+    <string name="watch_video_button">Watch Video</string>
+    <string name="video2_title">How I Keep My Budget Simple - Personal Budgeting Tips</string>
+    <string name="video2_description">Learn how to create a personal budget system that is simple and effective.</string>
+    <string name="video3_title">How To Make A Budget And Stick To It</string>
+    <string name="video3_description">Learn the best practices to stick to your budget and meet your financial goals.</string>
+    <string name="podcasts_title">Check out available Podcasts:</string>
+    <string name="view_all_podcasts">View all</string>
+    <string name="podcast1_title">The Jesse Mecham Show</string>
+    <string name="podcast1_description">I always struggle to pay rent each month after bills double. Learn budgeting hints and tricks with premium podcaster Jesse Mecham.</string>
+    <string name="listen_button">Listen</string>
+    <string name="podcast2_title">Budget Nerds</string>
+    <string name="podcast2_description">Master budgeting with analysts as they share budgeting tips, strategies for beginners to advanced, and how to find a financial plan that fits comfortably.</string>
+    <string name="personal_budget_title">Personal Budget</string>
+    <string name="accounts_limits_title">Accounts Limits</string>
+    <string name="limit_input_hint">Enter Limit</string>
+    <string name="description_label">Description (Optional)</string>
+    <string name="description_input_hint">Enter income description</string>
+    <string name="custom_account_description">Add custom account</string>
+    <string name="custom_account_text">Add Custom account</string>
+    <string name="set_limit_button">Set Limit</string>
+    <string name="clear_button">Clear</string>
+    <string name="view_rewards_button">View Rewards</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="home_text">Home</string>
+    <string name="ai_text">Personal\nChatbot</string>
+    <string name="report_text">Reports</string>
+    <string name="settings_text">Settings</string>
+    <string name="total_expenses_title">Total Expenses for the Month</string>
+    <string name="view_details">"View Details</string>
+    <string name="total_expenses_label">Total Expenses</string>
+    <string name="min_spending_goal_label">Min Spending Goal</string>
+    <string name="max_spending_goal_label">Max Spending Goal</string>
+    <string name="add_expense_button">Add Expense</string>
+    <string name="add_income_button">Add Income</string>
+    <string name="expense_list_title">Expense List</string>
+    <string name="food_category">Food</string>
+    <string name="entertainment_category">Entertainment</string>
+    <string name="time_frame_title">Time Frame</string>
+    <string name="weekly_button">Weekly</string>
+    <string name="monthly_button">Monthly</string>
+    <string name="yearly_button">Yearly</string>
+    <string name="view_all_button">View All</string>
+    <string name="total_spending_title">Total Spending</string>
+    <string name="selected_period">Selected Period</string>
+    <string name="weekly_total">Weekly</string>
+    <string name="monthly_total">Monthly</string>
+    <string name="yearly_total">Yearly</string>
+    <string name="total_expenses_amount">R6 500.56</string>
+    <string name="min_spending_goal_amount">R3 500.00</string>
+    <string name="max_spending_goal_amount">R10 000.00</string>
+    <string name="food_expense_amount">R2 500.59</string>
+    <string name="entertainment_expense_amount">R650.50</string>
+    <string name="total_spending_amount">R945.50</string>
+    <string name="food_expense_date">12/03/25</string>
+    <string name="entertainment_expense_date">15/03/25</string>
+    <string name="more_title">More</string>
+    <string name="rate_us_button">Rate Us</string>
+    <string name="sign_out_button">Sign out</string>
+    <string name="ai_chatbot_button">AI Chatbot</string>
+    <string name="rewards_title">Rewards</string>
+    <string name="total_income_title" translatable="false">Total Income</string>
+    <string name="savings_badges_title">Savings Badges</string>
+    <string name="view_all_badges_button">View All</string>
+    <string name="first_saving_badge">1st Saving</string>
+    <string name="savings_streak_badge">Savings\nStreak</string>
+    <string name="money_star_badge">Money\nStar</string>
+    <string name="days_streak_badge">15 Days\nStreak</string>
+    <string name="mini_budgeting_quiz_title">Mini Budgeting Quizz</string>
+    <string name="quiz_question">1. What is a budget?</string>
+    <string name="option_a">A. A financial reward</string>
+    <string name="option_b">B. A spending spree</string>
+    <string name="option_c">C. A plan for spending and saving money</string>
+    <string name="option_d">D. A tax refund</string>
+    <string name="reset_button">Reset</string>
+    <string name="next_button">NEXT</string>
+    <string name="quiz_completed">Quiz Completed!</string>
+    <string name="score_text">Your Score: 0/10</string>
+    <string name="score_comment">Keep learning about budgeting!</string>
+    <string name="points_earned">You earned 0 points!</string>
+    <string name="restart_quiz_button">Take Quiz Again</string>
+    <string name="settings_title">Settings</string>
+    <string name="turn_on_notifications">Turn On Notifications</string>
+    <string name="invite_friend">Invite a friend</string>
+    <string name="change_currency">Change Currency</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="budget_title">Budget</string>
+    <string name="add">Add</string>
+    <string name="advice">Advice</string>
+    <string name="more">More</string>
+    <string name="add_expense_title">Add Expense</string>
+    <string name="viewReport_title" translatable="false">Budget Report</string>
+    <string name="date_label">Date</string>
+    <string name="date_input_hint">Select date</string>
+    <string name="start_time_label">Start Time</string>
+    <string name="start_time_hint">Enter start time</string>
+    <string name="end_time_label">End Time</string>
+    <string name="end_time_hint">Enter end time</string>
+    <string name="category_label">Category</string>
+    <string name="add_category_button">+</string>
+    <string name="rent_category">Rent</string>
+    <string name="transport_category">Transport</string>
+    <string name="clothing_category">Clothing</string>
+    <string name="select_expense_category">Select expense category</string>
+    <string name="description_hint">Enter expense description</string>
+    <string name="amount_label">Amount</string>
+    <string name="amount_hint">Enter amount</string>
+    <string name="attach_photo_button">Attach Photo</string>
+    <string name="save_expense_button">Save Expense</string>
+    <string name="add_income_title">Add Income</string>
+    <string name="back_button_desc">Back button</string>
+    <string name="label_date">Date</string>
+    <string name="hint_select_date">Select date</string>
+    <string name="label_amount">Amount</string>
+    <string name="hint_enter_amount">Enter amount</string>
+    <string name="label_source">Source of Income</string>
+    <string name="hint_select_or_add_source">Select or add income source</string>
+    <string name="salary">Salary</string>
+    <string name="savings">Savings</string>
+    <string name="investment">Investment</string>
+    <string name="label_description">Description (Optional)</string>
+    <string name="hint_description">Enter income description</string>
+    <string name="min_spend">Minimum Spending</string>
+    <string name="min_spend_hint">Enter minimum amount</string>
+    <string name="max_spend">Maximum Spending</string>
+    <string name="max_spend_hint">Enter maximum amount</string>
+    <string name="shopping_category">Shopping</string>
+    <string name="select_category">Select Category</string>
+    <string name="expense_report">Expense Report</string>
+    <string name="select_time">Select Time Frame</string>
+    <string name="total_sub">Total</string>
+    <string name="view_expense_list">View Expense List</string>
+    <string name="download_report">Download Report</string>
+    <string name="feedback_form" translatable="false">Feedback Form</string>
+    <string name="feedbck_button" translatable="false">Submit Feedback</string>
+    <string name="f_name" translatable="false">Insert name here</string>
+    <string name="feed_name" translatable="false">Name</string>
+    <string name="f_email" translatable="false">Insert email here</string>
+    <string name="feedback_email" translatable="false">Email</string>
+    <string name="f_subject" translatable="false">Insert subject of feedback here</string>
+    <string name="feedback_subject" translatable="false">Feedback Subject</string>
+    <string name="f_msg" translatable="false">Insert detailed description of what the feedback is here</string>
+    <string name="feedback_msg" translatable="false">Feedback message</string>
+    <string name="Feedback_sub" translatable="false">Feedback has been submitted!</string>
+    <string name="AI_Tab">BudgetVault AI</string>
+    <string name="AI_Chat">Ask about budgeting, expenses, savings...</string>
+
+    <!-- Chatbot Strings -->
+    <string name="chatbot_title" translatable="false">BudgetVault AI</string>
+    <string name="chatbot_subtitle" translatable="false">Your intelligent financial assistant</string>
+    <string name="chatbot_status_ready" translatable="false">Ready to help with your finances</string>
+    <string name="chatbot_status_thinking" translatable="false">Thinking...</string>
+    <string name="chatbot_typing" translatable="false">AI is thinking...</string>
+
+    <!-- Welcome Messages -->
+    <string name="welcome_title" translatable="false">Welcome to BudgetVault AI</string>
+    <string name="welcome_subtitle" translatable="false">Your intelligent financial assistant</string>
+    <string name="quick_budget_tip" translatable="false">💡 Get a budget tip</string>
+    <string name="quick_expense_analysis" translatable="false">📊 Analyze my expenses</string>
+
+    <!-- Input Hints -->
+    <string name="message_hint" translatable="false">Ask about budgeting, expenses, savings...</string>
+
+    <!-- Content Descriptions -->
+    <string name="back_button" translatable="false">Back</string>
+    <string name="send_message" translatable="false">Send message</string>
+    <string name="ai_assistant" translatable="false">AI Assistant</string>
+
+    <!-- Error Messages -->
+    <string name="error_network" translatable="false">Network error. Please check your connection.</string>
+    <string name="error_general" translatable="false">Something went wrong. Please try again.</string>
+
+</resources>
+

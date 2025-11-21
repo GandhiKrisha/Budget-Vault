@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="@string/dashboard_title" />
+    <item
+        android:id="@+id/navigation_budget"
+        android:icon="@drawable/budgeticon"
+        android:title="@string/budget_title" />
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/addicon"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/navigation_advices"
+        android:icon="@drawable/adviceicon"
+        android:title="@string/advice" />
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/moreicon"
+        android:title="@string/more" />
+</menu>

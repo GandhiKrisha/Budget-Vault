@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".BudgetActivity">
+
+    <!-- Top Bar with Back Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/cardBackgroundColor"
+        android:elevation="4dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back_button_description"
+                android:padding="12dp"
+                app:srcCompat="@drawable/back_arrow_direction_down_right_left_up_svgrepo_com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_budget_title"
+                android:textColor="?attr/textPrimaryColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Content Scroll View -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/budgetCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accounts_limits_title"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Category Selection -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_label"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="16sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/categoriesContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addCategoryButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+"
+                            android:textSize="18sp"
+                            android:textColor="?attr/textPrimaryColor"
+                            android:backgroundTint="?attr/dividerColor"
+                            android:layout_marginEnd="8dp"/>
+
+                        <Button
+                            android:id="@+id/foodCategoryButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/food_category"
+                            android:textColor="?attr/textPrimaryColor"
+                            android:backgroundTint="?attr/dividerColor"
+                            android:layout_marginEnd="8dp"/>
+
+                        <Button
+                            android:id="@+id/transportCategoryButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transport_category"
+                            android:textColor="?attr/textPrimaryColor"
+                            android:backgroundTint="?attr/dividerColor"
+                            android:layout_marginEnd="8dp"/>
+
+                        <Button
+                            android:id="@+id/entertainmentCategoryButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/entertainment_category"
+                            android:textColor="?attr/textPrimaryColor"
+                            android:backgroundTint="?attr/dividerColor"
+                            android:layout_marginEnd="8dp"/>
+
+                        <Button
+                            android:id="@+id/shoppingCategoryButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shopping_category"
+                            android:textColor="?attr/textPrimaryColor"
+                            android:backgroundTint="?attr/dividerColor"
+                            android:layout_marginEnd="8dp"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/selectedCategoryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_category"
+                    android:textSize="14sp"
+                    android:textColor="?attr/textSecondaryColor"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Minimum Spending -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min_spend"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/minSpendingInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/min_spend_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Maximum Spending -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_spend"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/maxSpendingInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/max_spend_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_label"
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/descriptionInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="@string/description_hint"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:maxLines="3"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/setLimitButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="?attr/textPrimaryColor"
+                        android:text="@string/set_limit_button"
+                        android:textColor="?attr/cardBackgroundColor" />
+
+                    <Button
+                        android:id="@+id/clearButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="?attr/cardBackgroundColor"
+                        android:text="@string/clear_button"
+                        android:textColor="#FF0000" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/viewRewardsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="?attr/textPrimaryColor"
+                    android:text="@string/view_rewards_button"
+                    android:textColor="?attr/cardBackgroundColor" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="?attr/textPrimaryColor"
+                    android:text="@string/cancel_button"
+                    android:textColor="?attr/cardBackgroundColor" />
+                <!-- The concept on how to use strings in xml was derived from (Google, n.d.)-->
+                <!-- The concept on how to use change text color in xml was derived from (GeeksforGeeks, 2022)-->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav_curved_background"
+        app:itemIconTint="?attr/textPrimaryColor"
+        app:itemTextColor="?attr/textPrimaryColor"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearance="@style/BottomNavigationView.ItemTextAppearance"
+        app:itemIconSize="24dp"
+        app:itemPadding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--References
+GeeksforGeeks, 2022. How to Set the Text Color of TextView in Code?. [Online]
+Available at: https://www.geeksforgeeks.org/how-to-set-the-text-color-of-textview-in-code/
+[Accessed 25 April 2025].
+GeeksforGeeks, 2025. ImageView in Android with Example. [Online]
+Available at: https://www.geeksforgeeks.org/imageview-in-android-with-example/
+[Accessed 26 April 2025].
+Google, n.d.. String resources | Android Developers. [Online]
+Available at: https://developer.android.com/guide/topics/resources/string-resource
+[Accessed 24 April 2025].
+-->

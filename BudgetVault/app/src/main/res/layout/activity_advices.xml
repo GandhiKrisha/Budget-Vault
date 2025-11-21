@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    tools:context=".AdvicesActivity">
+
+    <!-- Top Bar with Back Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/cardBackgroundColor"
+        android:elevation="4dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back button"
+                app:srcCompat="@drawable/back_arrow_direction_down_right_left_up_svgrepo_com"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/budgeting_advice"
+                android:textColor="?attr/textPrimaryColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ScrollView to make content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Top message card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="?attr/cardBackgroundColor">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Check Available Resources to learn more about budgeting your finances efficiently."
+                    android:textColor="?attr/textPrimaryColor"
+                    android:textSize="16sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Videos Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="?attr/cardBackgroundColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Check out available videos:"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Video 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/budgetingbasics"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_corners"
+                            android:clipToOutline="true"
+                            android:outlineProvider="background"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Budgeting Basics"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="This explainer video will teach you the basics of budgeting. It explains why budgeting is important and how to do it."
+                                android:textColor="?attr/textSecondaryColor"
+                                android:textSize="12sp"
+                                android:maxLines="3"
+                                android:ellipsize="end" />
+
+                            <Button
+                                android:id="@+id/watchVideo1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:text="Watch Video"
+                                android:textSize="10sp"
+                                android:backgroundTint="?attr/accentColor"
+                                android:textColor="?attr/cardBackgroundColor"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Video 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/simplebudget"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_corners"
+                            android:clipToOutline="true"
+                            android:outlineProvider="background"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="How I Keep My Budget Simple - Personal Budgeting Tips"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Learn how to create a personal budget system that is simple and effective."
+                                android:textColor="?attr/textSecondaryColor"
+                                android:textSize="12sp"
+                                android:maxLines="3"
+                                android:ellipsize="end" />
+
+                            <Button
+                                android:id="@+id/watchVideo2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:text="Watch Video"
+                                android:textSize="10sp"
+                                android:backgroundTint="?attr/accentColor"
+                                android:textColor="?attr/cardBackgroundColor"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Video 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/sticktobudget"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_corners"
+                            android:clipToOutline="true"
+                            android:outlineProvider="background"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="How To Make A Budget And Stick To It"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Learn the best practices to stick to your budget and meet your financial goals."
+                                android:textColor="?attr/textSecondaryColor"
+                                android:textSize="12sp"
+                                android:maxLines="3"
+                                android:ellipsize="end" />
+
+                            <Button
+                                android:id="@+id/watchVideo3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:text="Watch Video"
+                                android:textSize="10sp"
+                                android:backgroundTint="?attr/accentColor"
+                                android:textColor="?attr/cardBackgroundColor"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/viewAllVideos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View all"
+                        android:textColor="?attr/accentColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Podcasts Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="?attr/cardBackgroundColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Check out available Podcasts:"
+                        android:textColor="?attr/textPrimaryColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Podcast 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/jessepodcast"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_corners"
+                            android:clipToOutline="true"
+                            android:outlineProvider="background"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="The Jesse Mecham Show"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="I always struggle to pay rent each month after bills double. Learn budgeting hints and tricks with premium podcaster Jesse Mecham."
+                                android:textColor="?attr/textSecondaryColor"
+                                android:textSize="12sp"
+                                android:maxLines="3"
+                                android:ellipsize="end" />
+
+                            <Button
+                                android:id="@+id/listenPodcast1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="Listen"
+                                android:textSize="10sp"
+                                android:backgroundTint="?attr/accentColor"
+                                android:textColor="?attr/cardBackgroundColor"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Podcast 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/budgetnerds"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_corners"
+                            android:clipToOutline="true"
+                            android:outlineProvider="background"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="8dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Budget Nerds"
+                                android:textStyle="bold"
+                                android:textColor="?attr/textPrimaryColor"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Master budgeting with analysts as they share budgeting tips, strategies for beginners to advanced, and how to find a financial plan that fits comfortably."
+                                android:textColor="?attr/textSecondaryColor"
+                                android:textSize="12sp"
+                                android:maxLines="3"
+                                android:ellipsize="end" />
+
+                            <Button
+                                android:id="@+id/listenPodcast2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:text="Listen"
+                                android:textSize="10sp"
+                                android:backgroundTint="?attr/accentColor"
+                                android:textColor="?attr/cardBackgroundColor"
+                                android:layout_marginTop="4dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/viewAllPodcasts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View all"
+                        android:textColor="?attr/accentColor"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_nav_curved_background"
+        app:itemIconTint="?attr/textPrimaryColor"
+        app:itemTextColor="?attr/textPrimaryColor"
+        app:labelVisibilityMode="labeled"
+        app:itemTextAppearance="@style/BottomNavigationView.ItemTextAppearance"
+        app:itemIconSize="24dp"
+        app:itemPadding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

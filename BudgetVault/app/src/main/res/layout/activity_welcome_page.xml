@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".WelcomePageActivity" >
+
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="134dp"
+            android:layout_height="133dp"
+            app:srcCompat="@drawable/bvlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas_neue"
+            android:text="Budget Vault"
+            android:textColor="#7DCA7F"
+            android:textSize="20sp"
+            android:translationX="100dp"
+            android:translationY="45dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:text="Best app for \nyour savings"
+        android:textColor="#7DCA7F"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="317dp"
+        app:srcCompat="@drawable/woman_banking" />
+
+    <Button
+        android:id="@+id/getstartedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#113313"
+        android:text="Get Started!"
+
+        android:translationY="20dp" />
+</LinearLayout>

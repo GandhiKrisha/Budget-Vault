@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/ST10356476/BudgetTracker_apk.git
+[remote "new-repo"]
+	url = https://github.com/VCPTA/bca3-prog7313-part-2-Joashp01.git
+	fetch = +refs/heads/*:refs/remotes/new-repo/*

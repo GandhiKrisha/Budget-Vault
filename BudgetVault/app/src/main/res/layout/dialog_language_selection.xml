@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Language"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/englishButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/spanishButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Español"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/frenchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Français"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/zuluButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zulu"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/afrikaansButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Afrikaans"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/cancelLanguageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#000000"/>
+</LinearLayout>

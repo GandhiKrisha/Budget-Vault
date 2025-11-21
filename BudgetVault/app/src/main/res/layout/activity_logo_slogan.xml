@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".LogoSloganActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="273dp"
+        android:layout_height="242dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:translationY="180dp"
+        app:srcCompat="@drawable/bvlogo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Budget Vault"
+        android:textAlignment="center"
+        android:textColor="#7DCA7F"
+        android:textSize="60sp"
+        android:translationY="100dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bebas_neue"
+        android:text="SECURE YOUR FINANCES, UNLOCK YOUR FUTURE"
+        android:textAlignment="center"
+        android:textColor="#8DC18F"
+        android:textSize="20sp"
+        android:translationY="80sp" />
+
+</LinearLayout>

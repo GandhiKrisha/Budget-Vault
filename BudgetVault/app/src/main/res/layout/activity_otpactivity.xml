@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#1e1e1e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Back arrow -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/backbtn"
+            android:layout_gravity="start"
+            android:contentDescription="Back" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check your email\nfor the OTP pin"
+            android:textSize="22sp"
+            android:textColor="#A8D5A2"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center" />
+
+        <!-- Icon -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/otp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="OTP Icon" />
+
+        <!-- OTP Input Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/otp1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/otp_input_background"
+                android:textColor="#1e1e1e"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/otp2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/otp_input_background"
+                android:textColor="#1e1e1e"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/otp3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/otp_input_background"
+                android:textColor="#1e1e1e"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/otp4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/otp_input_background"
+                android:textColor="#1e1e1e"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Resend -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive pin? "
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/resendPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            android:textColor="#1B5E20"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#124D1F"
+            android:text="Reset"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+</ScrollView>

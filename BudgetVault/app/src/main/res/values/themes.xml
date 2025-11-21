@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BudgetVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Custom theme attributes for light theme -->
+        <item name="backgroundColor">@color/background_light</item>
+        <item name="cardBackgroundColor">@color/card_background_light</item>
+        <item name="textPrimaryColor">@color/text_primary_light</item>
+        <item name="textSecondaryColor">@color/text_secondary_light</item>
+        <item name="accentColor">@color/accent_light</item>
+        <item name="dividerColor">@color/divider_light</item>
+        <item name="expenseListBgColor">@color/expense_list_bg_light</item>
+        <item name="tabSelectedColor">@color/tab_selected_light</item>
+    </style>
+
+    <style name="Theme.BudgetVault" parent="Base.Theme.BudgetVault" />
+</resources>

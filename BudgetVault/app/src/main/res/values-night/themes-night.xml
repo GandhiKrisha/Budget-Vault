@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme (Dark) -->
+    <style name="Theme.BudgetVault" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/background_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/background_dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+
+        <!-- Custom theme attributes -->
+        <item name="backgroundColor">@color/background_dark</item>
+        <item name="cardBackgroundColor">@color/card_background_dark</item>
+        <item name="textPrimaryColor">@color/text_primary_dark</item>
+        <item name="textSecondaryColor">@color/text_secondary_dark</item>
+        <item name="accentColor">@color/accent_dark</item>
+        <item name="dividerColor">@color/divider_dark</item>
+        <item name="expenseListBgColor">@color/expense_list_bg_dark</item>
+        <item name="tabSelectedColor">@color/tab_selected_dark</item>
+    </style>
+</resources>
