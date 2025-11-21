@@ -1,18 +1,18 @@
 # BudgetTracker_apk
 
-## 📌 About
+## About
 **Budget Vault** is a simple yet powerful budget tracking application designed to help users manage their income and expenses efficiently. Built with **Kotlin** for Android, this app enables users to track their financial activities, set budgets, and gain insights into their spending habits.
 
-## 🚀 Features
-- 📊 **Expense Tracking** – Log daily expenses and categorize them.
-- 💰 **Income Management** – Keep track of different sources of income.
-- 📅 **Budget Planning** – Set monthly or weekly budget goals.
-- 📈 **Data Visualization** – View financial reports through charts and graphs.
-- 🔔 **Reminders & Notifications** – Get alerts on exceeding budgets.
-- 🎯 **Badges and Rewards** - Get badges and get rewarded xp and move levels by using different features of the budgeting strategies.
-- 🤖 **AI Personal Assistant** - Get AI assistant with Financial advices.
+## Features
+- **Expense Tracking** – Log daily expenses and categorize them.
+- **Income Management** – Keep track of different sources of income.
+- **Budget Planning** – Set monthly or weekly budget goals.
+- **Data Visualization** – View financial reports through charts and graphs.
+- **Reminders & Notifications** – Get alerts on exceeding budgets.
+- **Badges and Rewards** - Get badges and get rewarded xp and move levels by using different features of the budgeting strategies.
+- **AI Personal Assistant** - Get AI assistant with Financial advices.
 
-## 🛠 Tech Stack
+## Tech Stack
 - **Language:** Kotlin
 - **IDE:** Android Studio
 - **Database:** Room Database (for offline storage), Firebase (Online)
@@ -20,7 +20,7 @@
 - **Version Control:** Git & GitHub
 - **AI Model:** Google Gemini AI
 
-## 📥 Installation
+## Installation
 1. Clone the repository:
    ```sh
    git clone https://github.com/ST10356476/BudgetTracker_apk.git
@@ -29,20 +29,4 @@
 3. Sync Gradle and build the project.
 4. Run the app on an emulator or a physical device.
 
-## 🤝 Contributing
-Contributions are welcome! Follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```sh
-   git checkout -b feature-branch-name
-   ```
-3. Make your changes and commit:
-   ```sh
-   git commit -m "Add new feature"
-   ```
-4. Push the changes:
-   ```sh
-   git push origin feature-branch-name
-   ```
-5. Open a **Pull Request** on GitHub.
 
